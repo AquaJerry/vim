@@ -408,7 +408,7 @@
  * VIMINFO_FILE2	Location of alternate user .viminfo file.
  */
 #ifdef FEAT_NORMAL
-# define FEAT_VIMINFO
+// # define FEAT_VIMINFO
 // #define VIMINFO_FILE	"$HOME/foo/.viminfo"
 // #define VIMINFO_FILE2 "~/bar/.viminfo"
 #endif

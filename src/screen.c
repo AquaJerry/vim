@@ -4509,8 +4509,8 @@ fillchar_status(int *attr, win_T *wp)
 		    || (fill_stl != fill_stlnc)))
 	return fill;
     if (wp == curwin)
-	return '^';
-    return '=';
+	return ' ';
+    return ' ';
 }
 
 /*
@@ -4522,7 +4522,7 @@ fillchar_vsep(int *attr)
 {
     *attr = HL_ATTR(HLF_C);
     if (*attr == 0 && fill_vert == ' ')
-	return '|';
+	return ' ';
     else
 	return fill_vert;
 }
